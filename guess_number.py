@@ -2,21 +2,21 @@ import random
 
 
 def play_game():
-    # 1. Generate a random secret number between 1 and 100
+    # Generating a random secret number between 1 and 100
     secret_number = random.randint(1, 100)
     attempts = 0
 
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.")
 
-    # 2. Loop until the user guesses correctly
+    # Looping  until the user guesses correctly
     while True:
         try:
-            # 3. Get the user's guess and convert to an integer
+            #  Getting  the user's guess and convert to an integer
             guess = int(input("Enter your guess: "))
             attempts += 1
 
-            # 4. Provide feedback
+            # Providing  feedback to the user
             if guess < secret_number:
                 print("Too low! Try again.")
             elif guess > secret_number:
